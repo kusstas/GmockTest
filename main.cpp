@@ -16,6 +16,7 @@ INSTANTIATE_TEST_CASE_P(PTestInstance, PTest,
                     std::tuple<const char*, std::vector<int>, int>("0 0 0 0",     { 0, 0, 0, 0 },     0),
                     std::tuple<const char*, std::vector<int>, int>("1 2 3 4",     { 1, 2, 3, 4 },     10),
                     std::tuple<const char*, std::vector<int>, int>("",            { },                0),
+                    std::tuple<const char*, std::vector<int>, int>("10 10 85",    { 10, 10, 85},      105),
                     std::tuple<const char*, std::vector<int>, int>("-1 1 -1 1",   { -1, 1, -1, 1 },   0)));
 
 TEST_P(PTest, test)
